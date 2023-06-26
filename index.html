@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/queries.css" />
+    <script type="module" src="./js/script.js"></script>
+
+    <title>Frontend Mentor | Calculator app</title>
+  </head>
+  <body>
+    <main>
+      <div class="container align-center">
+        <div class="calculator">
+          <div class="calc-heading">
+            <h1 class="primary-heading">calc</h1>
+            <div class="theme-switch">
+              <p class="theme-text">Theme</p>
+              <div class="theme-btn-box">
+                <p class="theme-num theme-num-1">1</p>
+                <p class="theme-num theme-num-2">2</p>
+                <p class="theme-num theme-num-3">3</p>
+                <button
+                  class="theme-btn"
+                  type="button"
+                  aria-label="Switch Theme"
+                ></button>
+              </div>
+            </div>
+          </div>
+          <div class="calc-screen">
+            <p class="calc-screen-num"></p>
+          </div>
+          <div class="calc-buttons">
+            <button class="btn num-btn" type="button" data-value="7">7</button>
+            <button class="btn num-btn" type="button" data-value="8">8</button>
+            <button class="btn num-btn" type="button" data-value="9">9</button>
+            <button
+              class="btn function-btn del-btn"
+              type="button"
+              data-value="d"
+            >
+              Del
+            </button>
+            <button class="btn num-btn" type="button" data-value="4">4</button>
+            <button class="btn num-btn" type="button" data-value="5">5</button>
+            <button class="btn num-btn" type="button" data-value="6">6</button>
+            <button class="btn operator-btn" type="button" data-value="+">
+              +
+            </button>
+            <button class="btn num-btn" type="button" data-value="1">1</button>
+            <button class="btn num-btn" type="button" data-value="2">2</button>
+            <button class="btn num-btn" type="button" data-value="3">3</button>
+            <button class="btn operator-btn" type="button" data-value="-">
+              -
+            </button>
+            <button class="btn num-btn" type="button" data-value=".">.</button>
+            <button class="btn num-btn" type="button" data-value="0">0</button>
+            <button class="btn operator-btn" type="button" data-value="/">
+              /
+            </button>
+            <button class="btn operator-btn" type="button" data-value="x">
+              x
+            </button>
+            <button
+              class="btn function-btn reset-btn"
+              type="button"
+              data-value="r"
+            >
+              reset
+            </button>
+            <button
+              class="btn function-btn result-btn"
+              type="button"
+              data-value="="
+            >
+              =
+            </button>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Alejandro Perdomo</a>.
+      </div>
+    </footer>
+  </body>
+</html>

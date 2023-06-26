@@ -1,0 +1,381 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "League Spartan", sans-serif;
+  transition: background-color 0.2s;
+}
+
+.container {
+  max-width: 54rem;
+  margin: 0 auto;
+}
+
+.align-center {
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.calculator {
+  width: 100%;
+}
+
+/* CALCULATOR HEADING */
+
+.calc-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2.5rem;
+}
+
+.primary-heading {
+  font-size: 3.2rem;
+  transition: color 0.2s;
+}
+
+.theme-switch {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+}
+
+.theme-text {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: color 0.2s;
+}
+
+.theme-btn-box {
+  position: relative;
+}
+
+.theme-num {
+  font-size: 1.6rem;
+  position: absolute;
+  top: -2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: color 0.2s;
+}
+
+.theme-num-1 {
+  transform: translateX(-475%);
+}
+
+.theme-num-3 {
+  transform: translateX(220%);
+}
+
+.theme-btn {
+  border: none;
+  height: 2.6rem;
+  width: 7.2rem;
+  border-radius: 100px;
+  position: relative;
+  cursor: pointer;
+}
+
+.theme-btn::after {
+  content: "";
+  display: block;
+  width: 1.6rem;
+  height: 1.6rem;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transition: background-color 0.2s, transform 0.2s;
+}
+
+/* CALCULATOR SCREEN */
+
+.calc-screen {
+  width: 100%;
+  padding: 4.1rem 3rem 3.7rem;
+  text-align: right;
+  border-radius: 10px;
+  margin-bottom: 2.5rem;
+  transition: background-color 0.2s;
+}
+
+.calc-screen-num {
+  font-size: 5.4rem;
+}
+
+.calc-screen-med-num {
+  font-size: 4.2rem;
+  padding: 0.6rem 0;
+}
+
+.calc-screen-sml-num {
+  font-size: 3rem;
+  padding: 1.1rem 0;
+}
+
+/* CALCULATOR BUTTON PAD */
+
+.calc-buttons {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-gap: 2.4rem;
+  row-gap: 2.8rem;
+  padding: 3.2rem 3rem;
+  border-radius: 10px;
+  position: relative;
+  z-index: 0;
+  transition: background-color 0.2s;
+}
+
+.btn {
+  border: none;
+  font-family: "League Spartan", sans-serif;
+  font-size: 3.2rem;
+  padding: 1.8rem 0 1.3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  position: relative;
+  cursor: pointer;
+  transition: background-color 0.15s, color 0.15s;
+}
+
+.btn::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 6.4rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  z-index: -1;
+}
+
+.function-btn {
+  text-transform: uppercase;
+}
+
+.reset-btn {
+  grid-column: 1 / 3;
+}
+
+.result-btn {
+  grid-column: 3 / 5;
+}
+
+/* THEME 1 */
+
+.theme-1 {
+  background-color: #3a4764;
+}
+
+.theme-1 .theme-btn,
+.theme-1 .calc-buttons {
+  background-color: #232c43;
+}
+
+.theme-1 .calc-screen {
+  background-color: #182034;
+}
+
+.theme-1 .theme-btn::after {
+  background-color: #d03f2f;
+  transform: translate(-190%, -50%);
+}
+
+.theme-1 .btn {
+  background-color: #eae3dc;
+  color: #444b5a;
+}
+
+.theme-1 .btn::after {
+  background-color: #b4a597;
+}
+
+.theme-1 .btn:active {
+  background-color: #ffffff;
+}
+
+.theme-1 .function-btn {
+  background-color: #637097;
+}
+
+.theme-1 .function-btn::after {
+  background-color: #404e72;
+}
+
+.theme-1 .function-btn:active {
+  background-color: #a2b3e1;
+}
+
+.theme-1 .result-btn {
+  background-color: #d03f2f;
+}
+
+.theme-1 .result-btn::after {
+  background-color: #93261a;
+}
+
+.theme-1 .theme-btn:hover::after,
+.theme-1 .result-btn:active {
+  background-color: #f96c5b;
+}
+
+.theme-1 .primary-heading,
+.theme-1 .theme-text,
+.theme-1 .theme-num,
+.theme-1 .calc-screen-num,
+.theme-1 .function-btn {
+  color: #fff;
+}
+
+/* THEME 2 */
+
+.theme-2 {
+  background-color: #e6e6e6;
+}
+
+.theme-2 .theme-btn,
+.theme-2 .calc-buttons {
+  background-color: #d1cccc;
+}
+
+.theme-2 .calc-screen {
+  background-color: #ededed;
+}
+
+.theme-2 .theme-btn::after {
+  background-color: #ca5502;
+  transform: translate(-50%, -50%);
+}
+
+.theme-2 .btn {
+  background-color: #e5e4e1;
+  color: #35352c;
+}
+
+.theme-2 .btn::after {
+  background-color: #a69d91;
+}
+
+.theme-2 .btn:active {
+  background-color: #ffffff;
+}
+
+.theme-2 .function-btn {
+  background-color: #377f86;
+  color: #fff;
+}
+
+.theme-2 .function-btn::after {
+  background-color: #1b5f65;
+}
+
+.theme-2 .function-btn:active {
+  background-color: #62b5bd;
+}
+
+.theme-2 .result-btn {
+  background-color: #ca5502;
+}
+
+.theme-2 .result-btn::after {
+  background-color: #893901;
+}
+
+.theme-2 .theme-btn:hover::after,
+.theme-2 .result-btn:active {
+  background-color: #ff8b38;
+}
+
+.theme-2 .primary-heading,
+.theme-2 .theme-text,
+.theme-2 .theme-num,
+.theme-2 .calc-screen-num {
+  color: #35352c;
+}
+
+/* THEME 3 */
+
+.theme-3 {
+  background-color: #160628;
+}
+
+.theme-3 .theme-btn,
+.theme-3 .calc-buttons,
+.theme-3 .calc-screen {
+  background-color: #1d0934;
+}
+
+.theme-3 .theme-btn::after {
+  background-color: #00e0d1;
+  transform: translate(90%, -50%);
+}
+
+.theme-3 .btn {
+  background-color: #341c4f;
+  color: #ffe53d;
+}
+
+.theme-3 .btn::after {
+  background-color: #871c9c;
+}
+
+.theme-3 .btn:active {
+  background-color: #6b34ac;
+}
+
+.theme-3 .function-btn {
+  background-color: #58077d;
+  color: #fff;
+}
+
+.theme-3 .function-btn::after {
+  background-color: #bc15f4;
+}
+
+.theme-3 .function-btn:active {
+  background-color: #8631b0;
+}
+
+.theme-3 .result-btn {
+  background-color: #00e0d1;
+  color: #1b2428;
+}
+
+.theme-3 .result-btn::after {
+  background-color: #6cf9f2;
+}
+
+.theme-3 .theme-btn:hover::after,
+.theme-3 .result-btn:active {
+  background-color: #94fff9;
+}
+
+.theme-3 .primary-heading,
+.theme-3 .theme-text,
+.theme-3 .theme-num,
+.theme-3 .calc-screen-num {
+  color: #ffe53d;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
