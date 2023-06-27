@@ -30,7 +30,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Frontend Mentor Solution](https://your-solution-url.com)
+- Solution URL: [Frontend Mentor Solution](https://www.frontendmentor.io/solutions/responsive-25digit-calculator-with-theme-switch-Ru7lyo80V-)
 - Live Site URL: [Calculator App](https://calculator-alejandro.netlify.app)
 
 ## My process
